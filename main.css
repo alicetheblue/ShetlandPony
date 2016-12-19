@@ -26,26 +26,28 @@ end of because ofclearleft*/
 nav.primary {
     overflow: hidden;
     letter-spacing: 0.125em;
-    font-size: 0.8125em;
-    line-height: 1.4;
-    padding-top: 0.5em;
+    font-size: 0.4em;
+    text-align: center;
 }
 
 nav.primary ul {
     list-style: none;
-    margin-right: 4.5em;
+    padding: 0;
+        margin: .75em 0 .50em 0;
 }
 
 nav.primary li {
-    position: relative;
+    display: inline-block;
+    padding-left: 1.5em;
+   /*  position: relative;
     float: right;
     margin-bottom: 0;
     padding: 0 1.5em 1em;
-    white-space: nowrap;
+    white-space: nowrap;*/
     }
 
-    nav.primary li:first-child {
-    margin-left: 0;
+nav.primary li:first-child {
+    padding-left: 0;
 }
 
 /*nav.primary li:before {
@@ -66,7 +68,7 @@ nav.primary a {
     display: inline-block;
     text-decoration: none;
     color: rgb(120, 123, 99);
-    font-size: 3.0625em;
+    font-size: 2.2em;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
     position: relative;
     left: 1px;
@@ -78,8 +80,8 @@ nav.primary a:hover, nav a:active {
 }
 
 p{
-	font-size: 1.2em;
-	line-height: 1.5;
+	font-size: 0.9em;
+	line-height: 1.8;
 	color: #787b63;
 }
 p a{
@@ -91,9 +93,9 @@ h1, h2, h3{
 	font-family: 'Roboto Slab', serif;
 }
 h1{
-    font-size: 4.8em; 
-    letter-spacing: 0.01em;
-    line-height: 1.25;
+    font-size: 2.6em; 
+    letter-spacing: 0.05em;
+    line-height: 1.05;
 	text-transform: uppercase;
     text-align: center;
 	color: rgb(120, 123, 99);
@@ -108,10 +110,9 @@ h1{
 }
 
 h2{
-	font-size: 3em;
+	font-size: 1.6em;
 	line-height: 2em;
-    letter-spacing: .009em;
-    letter-spacing: .009em;
+    letter-spacing: .02em;
 	color: rgb(120, 123, 99);
 	background-color: rgba(194, 199, 75, 0.5);
     padding-left: .5em;
@@ -360,8 +361,16 @@ figure.figure img {
 aside{
 	font-size: .8em;
     background-color: rgba(194, 199, 75, 0.5);
-    padding: 4em;
+    padding: 1.25em 1.5em 2em;
     margin: 0;
+}
+
+aside p{
+    margin: 0;
+}
+
+aside .quote{
+    margin-bottom: .75em;
 }
 
 #visitscotland::after {
@@ -373,9 +382,8 @@ aside{
 }
 
 figcaption{
-	font-size: .8em;
+	font-size: .75em;
 	font-style: italic;
-	font-weight: bold;
     background-color: rgba(194, 199, 75, 0.5);
     padding: .5em;
 }
@@ -404,9 +412,6 @@ q:after {
     content: close-quote;
 }
 
-aside p{
-	margin-top: 9px
-}
 .fancy {    
 	height: 0;
     width: 66%;
@@ -423,7 +428,7 @@ footer{
 }
 
 footer p{
-	font-size: .8em;
+	font-size: .65em;
 	color: rgb(255, 255, 255);
 }
 
@@ -434,13 +439,19 @@ footer p{
 }*/
 
 @media (min-width: 25em)  {
-    nav.primary a {
-        font-size: 3em;
+    aside .quote {
+    margin-bottom: .25em;
+    }
+}
+
+@media (min-width: 35em)  {  
+    h1 {
+        font-size: 3.6em;
+    }
 }
 
 @media (min-width: 45em)  {
     nav.primary a {
-        font-size: 2em;
     }
     aside {
     font-size: .8em;
@@ -453,10 +464,9 @@ footer p{
     padding: 0 .75em 1em;
     }
     nav.primary a {
-        font-size: 1.7em;
     }
     h1 {
-        font-size: 5.7em;
+        font-size: 4.7em;
         letter-spacing: 0.07em;
 }
 
