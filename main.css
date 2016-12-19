@@ -465,9 +465,15 @@ footer p{
     }
     nav.primary a {
     }
+    p{
+    font-size: 1.2em;
+    }
     h1 {
         font-size: 4.7em;
         letter-spacing: 0.07em;
+    }
+    h2 {
+    font-size: 2.6em;
+    }
 }
-
 
