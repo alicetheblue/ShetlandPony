@@ -1,10 +1,10 @@
 
 body{
 	font-family: 'Lato', non-serif;
-	font-size: 16px;
-	line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.8;
 	color: #787b63;
-    	background-color: rgba(120, 123, 99, 0.1);
+    background-color: rgba(120, 123, 99, 0.1);
 	margin: 0;
 	padding: 0;
 }
@@ -12,19 +12,12 @@ img {
     display: block;
     width: 100%;
     max-width: 100%;
-    height: au;
     height: auto;
     }
 
 
 
-/* because ofclearleft
-.banner{
-	background-color: rgb(120, 123, 99); 
-}
-end of because ofclearleft*/
-
-/* from clearleft*/
+/*nav banner*/
 nav.primary {
     overflow: hidden;
     letter-spacing: 0.125em;
@@ -41,30 +34,12 @@ nav.primary ul {
 nav.primary li {
     display: inline-block;
     padding-left: 1.5em;
-   /*  position: relative;
-    float: right;
-    margin-bottom: 0;
-    padding: 0 1.5em 1em;
-    white-space: nowrap;*/
     }
 
 nav.primary li:first-child {
     padding-left: 0;
 }
 
-/*nav.primary li:before {
-
-    font-family: Cleardings;
-    font-style: normal;
-    font-weight: bold;
-    position: absolute;
-    left: -0.55em;
-    top: 0.15em;
-    font-size: 20px;
-    font-size: 1.75rem;
-    color: rgb(120, 123, 99);
-    content: '|';
-}*/
 
 nav.primary a {
     display: inline-block;
@@ -75,15 +50,27 @@ nav.primary a {
     position: relative;
     left: 1px;
 }
-/* end from clearleft*/
 
 nav.primary a:hover, nav a:active {
     color: rgb(204, 204, 204);
 }
+.banner h1{
+    color: rgb(235, 236, 223);
+}
+
+/* end nav banner*/
+
+
+/* Typography*/
 
 p a{
 	font-style: italic;
 	color: #787b63;
+}
+
+p,
+ul {
+    margin: 0 0 1.5em;
 }
 
 h1, h2, h3{
@@ -102,10 +89,6 @@ h1{
     
 }
 
-.banner h1{
-	color: rgb(235, 236, 223);
-}
-
 h2{
 	font-size: 1.6em;
 	line-height: 2em;
@@ -117,246 +100,9 @@ h2{
 
 h3 {
     margin-top: .5em;
-}*/
-
-/*mobile_nav*/
-
-/*begin our styles*/
- 
- 
- 
-p,
-ul {
-    margin: 0 0 1.5em;
 }
- 
-
- 
- 
-/*layout*/
- 
-
- 
-/*header*/
- 
-/*header {
-    background: #1c1c1c;
-    padding: 15px 20px;
-}*/
- 
-        /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
-        /*header:before,
-        header:after {
-            content:"";
-            display:table;
-        }
-         
-        header:after {
-            clear:both;
-        }
-         
-        /* For IE 6/7 (trigger hasLayout) */
-        /* header {
-            zoom:1;
-        }*/
- 
-h4.logo a {
-    color: #d8d8d8;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 22px;
-    float: left;
-    letter-spacing: 0.2em;
-}
- 
-a.to_nav {
-    float: right;
-    color: #fff;
-    background: #4e4e4e;
-    text-decoration: none;
-    padding: 0 10px;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 22px;
-    height: 22px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-}
- 
-a.to_nav:hover,
-a.to_nav:focus {
-    color: #1c1c1c;
-    background: #ccc;
-}
-/*navigation*/ 
- 
-#primary_nav ul {
-    list-style: none;
-    background: #1c1c1c;
-    padding: 5px 0;
-}
- 
-#primary_nav li a {
-    display: block;
-    padding: 0 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    letter-spacing: 0.1em;
-    line-height: 2em;
-    height: 2em;
-    border-bottom: 1px solid #383838;
-}
- 
-#primary_nav li:last-child a {
-    border-bottom: none;
-}
- 
-#primary_nav li a:hover,
-#primary_nav li a:focus {
-    color: #1c1c1c;
-    background: #ccc;
-}
-    /*end mobile_nav*/
-
- /* old nav big screen 
-
-nav {
-    border-left: 5px solid rgb(154, 205, 50);
-    box-sizing: border-box;
-    float: right;
-    margin: 28px 56px 0 0
-}
-
-nav ul{
-	padding: 0 0 0 10px;
-	margin: 0;
-}
-
-nav li{
-	display: block;
-	text-decoration: none;
-}
-
-nav a { 
-	line-height: 1.5em;
-	color: rgb(230, 234, 206);
-	text-decoration: none;
-	display: block;
-	transition: 1s color;
-	/* style 
-}
-
- /* end old nav big screen */
-
-/* old nav
-
-nav a:hover, a:active  {
-	color: rgb(154, 205, 50);
-}
-
-nav a.selected:link, a.selected:active{
-	color: rgb(154, 205, 50);
-}
-
-nav a.selected:link, a.selected:visited {
-	color: rgb(154, 205, 50);
-}
-
-end of old nav*/
-
-main, footer{
-    margin: 0 auto;
-    padding: 0 2em;
-    box-sizing: border-box;
-}
-
-/*figure {
-    display: inline-block;
-    margin: 0;
-}
-
-figure.figure{
-	float: right;
-}
-
-figure.figure img {
-    padding: 0;
-    margin: 0;
-    width: 400px;
-    display: inline-block;
-
-
-#origin{
-	margin:0 0 40px;
-}
-
-#origin .figure, #pit .figure{
-    position: relative;
-    margin: 0 0 1.25em;
-} */
-
-/*.figure img:nth-child{
-	margin-left:20px;
-}*/
-
-/*#history-image p{
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 0 1em 1em;
-}*/
-
-/*#pit::after {
-	content: "";
-	display: block;
-	clear: both;
-	width: 0;
-	height: 0;
-}*/
-
-/*#children .figure{
-	float: right;
-    margin: 0 0 0 2em;
-}
-
-#children .figure img{
-	width: 500px
-}
-
-#children::after {
-	content: "";
-	display: block;
-	clear: both;
-	width: 0;
-	height: 0;
-}*/
-
-.figure{
-    margin: 2px;
-}
-
-.figure img{
-    margin-top: 2em;
-}
-
-
-#visitscotland .figure{
-	margin: 0;
-}
-}
-
-#visitscotland .figure img{
-}
-
 aside{
-	font-size: .8em;
+    font-size: .8em;
     background-color: rgba(194, 199, 75, 0.5);
     padding: 1.25em 1.5em 2em;
     margin: 0;
@@ -371,32 +117,32 @@ aside .quote{
 }
 
 #visitscotland::after {
-	content: "";
-	display: block;
-	clear: both;
-	width: 0;
-	height: 0;
+    content: "";
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
 }
 
 figcaption{
-	font-size: .75em;
-	font-style: italic;
+    font-size: .75em;
+    font-style: italic;
     background-color: rgba(194, 199, 75, 0.5);
     padding: .5em;
 }
 
 .hero-caption{
-	font-size: .8em;
-	line-height: 1.2;
+    font-size: .8em;
+    line-height: 1.2;
     font-style: italic;
     color: rgb(120, 123, 99);
     margin: .5em 0;
 }
 
 aside q{
-	display: inline;
-	font-size: 1.5em;
-	font-weight: bold;
+    display: inline;
+    font-size: 1.5em;
+    font-weight: bold;
     font-style: italic;
     margin: 0 0 .5px 0;
 }
@@ -410,7 +156,7 @@ q:after {
 }
 
 .fancy {    
-	height: 0;
+    height: 0;
     width: 66%;
     margin: 0 auto;
     border-bottom: .5px solid rgb(223, 228, 183);
@@ -425,9 +171,34 @@ footer{
 }
 
 footer p{
-	font-size: .65em;
-	color: rgb(255, 255, 255);
+    font-size: .65em;
+    color: rgb(255, 255, 255);
 }
+/*end typography*/
+ 
+/*page structure/layout*/
+main, footer{
+    margin: 0 auto;
+    padding: 0 2em;
+    box-sizing: border-box;
+}
+
+.figure{
+    margin: 2px;
+}
+
+.figure img{
+    margin-top: 2em;
+}
+
+#visitscotland .figure{
+	margin: 0;
+}
+
+#visitscotland .figure img{
+}
+
+
 
 /*@media (min-width: 40em) {
   body {
@@ -473,4 +244,5 @@ footer p{
     font-size: 2.6em;
     }
 }
+
 
