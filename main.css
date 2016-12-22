@@ -21,14 +21,13 @@ img {
 nav.primary {
     overflow: hidden;
     letter-spacing: 0.125em;
-    font-size: 0.4em;
     text-align: center;
 }
 
 nav.primary ul {
     list-style: none;
     padding: 0;
-        margin: .75em 0 .50em 0;
+    margin: .50em 0 .15em 0;
 }
 
 nav.primary li {
@@ -45,7 +44,7 @@ nav.primary a {
     display: inline-block;
     text-decoration: none;
     color: rgb(120, 123, 99);
-    font-size: 2.2em;
+    font-size: 1.2em;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
     position: relative;
     left: 1px;
