@@ -2,6 +2,7 @@
 body{
 	font-family: 'Lato', non-serif;
 	font-size: 16px;
+	line-height: 1.8;
 	color: #787b63;
     	background-color: rgba(120, 123, 99, 0.1);
 	margin: 0;
@@ -80,11 +81,6 @@ nav.primary a:hover, nav a:active {
     color: rgb(204, 204, 204);
 }
 
-p{
-	font-size: 0.9em;
-	line-height: 1.8;
-	color: #787b63;
-}
 p a{
 	font-style: italic;
 	color: #787b63;
