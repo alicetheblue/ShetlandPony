@@ -3,8 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shetland pony - Wikipedia</title>
-	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="stylesheet" type="text/css" href="main.css" media="all"/>
+	<!-- Mobile Friendliness -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<!-- Web Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
+	<!-- Polyfill for Picture element -->
+	<script>document.createElement( "picture" );</script>
+	<script src="js/picturefill.min.js" async=""></script>
 </head>
 
 
@@ -13,12 +21,10 @@
 	<!--<start.banner>-->
 	<header role="banner" class="banner">
 			<nav class="primary navigation" role="navigation">
-				 <ul>
+				<ul>
+				 	<li><a href="index.html">Home</a></li>
+				 	<li><a href="history.html">History</a></li>
 				 	<li><a href="today.html">Today</a></li>
-									
-					<li><a href="history.html">History</a></li>
-					
-					<li><a href="index.html">Home</a></li>
 				</ul>
 			</nav>
 		<h1>The Shetland Pony</h1>
@@ -59,7 +65,7 @@
 			<img src="images/pony_snow.jpg" alt="ponies in snow">
 
 			<aside>
-				<p>Shetlands have long thick manes and tails and dense double winter coats to withstand harsh weather and are considered quite intelligent. They are a very strong breed of pony, used for riding, driving, and pack purposes</p>
+				<p>Shetlands have long thick manes and tails and dense double winter coats to withstand harsh weather and are considered quite intelligent. They are a very strong breed of pony, used for riding, driving, and pack purposes.</p>
 			</aside>
 
 		</article>
