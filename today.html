@@ -3,31 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shetland pony - Wikipedia</title>
-	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="stylesheet" type="text/css" href="main.css" media="all"/>
+	<!-- Mobile Friendliness -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<!-- Web Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
+	<!-- Polyfill for Picture element -->
+	<script>document.createElement( "picture" );</script>
+	<script src="js/picturefill.min.js" async=""></script>
 </head>
 
 	<body>
 
-		<!--<start.banner>-->
-		<header role="banner" class="banner">
+	<!--<start .banner>-->
+	<header role="banner" class="banner">
 			<nav class="primary navigation" role="navigation">
-				 <ul>
-				 	<li><a href="today.html">Today</a></li>
-									
-					<li><a href="history.html">History</a></li>
-					
-					<li><a href="index.html">Home</a></li>
+				<ul>
+					 <li><a href="index.html">Home</a></li>
+					 <li><a href="history.html">History</a></li>
+					 <li><a href="today.html">Today</a></li>
 				</ul>
 			</nav>
-			<h1>The Shetland Pony</h1>
-		</header>
-		<!--<end.banner>-->
+		<h1>The Shetland Pony</h1>
+	</header>
+	<!--<end .banner>-->
 
-		<section id="dancing-image"><img src="images/dancing.jpg" alt="pony">
-		</section>
+	<section id="dancing-image">
+			<img src="images/dancing.jpg" alt="pony">
+	</section>
 
-
+	<!--<start main>-->
 		<main role="main">
 
 			<h2>Today</h2>
@@ -48,22 +55,24 @@
 
 					<figure class="figure">
 						<img src="images/sweaters.jpg" alt="2 ponies with sweaters">
-						<figcaption class=""></figcaption>
 					</figure>
 					<aside>
-					<q>Come visit us!</q>
-					<p>(Yes, that's a direct quote from Shetland ponies Vitamin and Fivla, who donned sweaters to entice people to come to Scotland.)
-					</p>
+						<p class="quote">
+						<q>Come visit us!</q>
+						</p>
+						<p>(Yes, that's a direct quote from Shetland ponies Vitamin and Fivla, who donned sweaters to entice people to come to Scotland.)
+						</p>
 					</aside>
 
 				</article>
-
 		</main>
+		<!--<end main>-->
 
+		<!--<start footer>-->
 		<footer>
-			<p>The text content of this site borrowed from the Wikipedia article on the Shetland Pony 1 November 2016 under the Creative Commons Attribution-ShareAlike License. 
+			<p>The text content of this site and some images were borrowed from the Wikipedia article on the Shetland Ponyon 1 November 2016 under the Creative Commons Attribution-ShareAlike License. Licensing terms of content from other sources (photos, etc.) is noted along with each respective resource.</p>
 		</footer>
-
+		<!--<end footer>-->
 
 	</body>
 </html>
