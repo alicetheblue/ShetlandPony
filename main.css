@@ -92,7 +92,7 @@ h2{
 	line-height: 2em;
     letter-spacing: .02em;
 	color: rgb(120, 123, 99);
-	background-color: rgba(194, 199, 75, 0.5);
+	background-color: rgba(194, 199, 75, 0.35);
     margin: 1.1em 0 .45em;
     padding-left: .5em;
 }
@@ -102,7 +102,7 @@ h3 {
 }
 aside{
     font-size: .8em;
-    background-color: rgba(194, 199, 75, 0.5);
+    background-color: rgba(194, 199, 75, 0.35);
     padding: 1.25em 1.5em 2em;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -127,7 +127,7 @@ aside .quote{
 figcaption{
     font-size: .75em;
     font-style: italic;
-    background-color: rgba(194, 199, 75, 0.5);
+    background-color: rgba(194, 199, 75, 0.35);
     padding: .5em;
 }
 
@@ -172,7 +172,7 @@ main{
 }
 
 footer{
-    margin: 0 auto;
+    margin: 3em auto 0;
     padding: 1em 2em;
     background-color: rgba(122, 123, 99, .4);
     clear: both;
@@ -267,12 +267,14 @@ footer p{
         width: 47%;
     }
 
-    #visitscotland .figure {
+    /*one image left about/ visit scotland*/
+    article img {
         float: left;
-        margin-top: 0;
+        margin: 0 0 3em;
         width: 56%;
     }
-
+    
+    /*one image left*/
     #visitscotland .figure img{
         margin: 0 0 3em;
     }
