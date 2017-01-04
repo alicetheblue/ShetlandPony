@@ -1,8 +1,6 @@
 
 body{
-	font-family: 'Lato', non-serif;
-    font-size: 16px;
-    line-height: 1.8;
+	font:100%/1.8em "Lato", Arial, Helvetica, sans-serif;
 	color: #787b63;
     background-color: rgba(159, 165, 118, 0.18);
 	margin: 0;
@@ -67,7 +65,7 @@ p {
 
 p a{
 	font-style: italic;
-	color: #787b63;
+	color: rgb(153, 169, 46);
 }
 
 ul {
@@ -107,6 +105,7 @@ aside{
     background-color: rgba(194, 199, 75, 0.5);
     padding: 1.25em 1.5em 2em;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 aside p{
@@ -176,11 +175,12 @@ footer{
     margin: 0 auto;
     padding: 1em 2em;
     background-color: rgba(122, 123, 99, .4);
-    /*clear: both;*/
+    clear: both;
 }
 
 footer p{
     font-size: .65em;
+    line-height: 1.4em;
     color: rgb(255, 255, 255);
 }
 
@@ -189,7 +189,7 @@ footer p{
 }
 
 .figure img{
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 #visitscotland .figure{
@@ -215,14 +215,78 @@ footer p{
 
 @media (min-width: 35em)  {  
     h1 {
-        font-size: 3.6em;
+    font-size: 3.6em;
+    }
+    aside p{
+        line-height: 1.6em;
     }
 }
 
 @media (min-width: 45em)  {
     aside {
+    float: right;
     font-size: .8em;
-    padding: 2em;
+    width: 44%;
+    }
+
+    /*two images across*/
+    #origin .figure {
+    float: left;
+    margin: 0 0.5em 0.75em 0;
+    width: 47%;
+    }
+
+    #origin .figure:nth-child(odd) {
+    margin-left: 3%;
+    }
+
+    #pit{
+        clear: both;
+    } 
+
+    #pit::after {
+        content: " ";
+        display: block;
+        clear: both;
+        width: 0;
+        height: 0;
+    } 
+
+    #visitscotland::after {
+        content: " ";
+        display: block;
+        clear: both;
+        width: 0;
+        height: 0;
+    } 
+
+    /*one image left*/
+    #pit .figure {
+        float: left;
+        margin: 0 0.5em 1.25em 0;
+        width: 47%;
+    }
+
+    #visitscotland .figure {
+        float: left;
+        margin-top: 0;
+        width: 56%;
+    }
+
+    #visitscotland .figure img{
+        margin: 0 0 3em;
+    }
+
+    #visitscotland p{
+        margin: 1.5em 0 2em;
+    }
+
+    /*p 47% right*/
+    #pit p {
+    float: right;
+    width: 49%;
+    margin-top: 0.75em;
+    }
 }
 
 
@@ -241,5 +305,21 @@ footer p{
     font-size: 2.6em;
     }
 }
+
+/* Print Styles */
+@media print {
+    
+    /* =================================================================
+     * Overall page setup
+     * ================================================================= */
+    @page { margin: 0.5in; }
+    * { background: transparent !important; }
+    
+    /* =================================================================
+     * Readable font size
+     * ================================================================= */
+    body {
+        font-size: 16pt;
+    }
 
 
