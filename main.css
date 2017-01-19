@@ -13,44 +13,52 @@ img {
     height: auto;
     }
 
+    a {
+    text-decoration: none;
+    color: rgb(238, 73, 56);
+    transition: color 0.2s ease-out;
+}
+
+
 /*start nav banner*/
 nav.primary {
     overflow: hidden;
-    letter-spacing: 0.125em;
-    text-align: center;
+    font-size: .75em;
+    line-height: 1;
+    margin: .50em 0 .15em 0;
+    padding: 0;
 }
 
 nav.primary ul {
     list-style: none;
-    padding: 0;
-    margin: .50em 0 .15em 0;
+    margin: .75em 0 .50em 0;
+    text-align: center;
+    padding-left: 0;
 }
 
 nav.primary li {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 0;
-    padding: 0 .25em 0;
-    text-align: center;
-    white-space: nowrap;
+    display: inline;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    margin-right: 0.875em;
 }
 
-nav.primary li:first-child {
-    padding-left: 0;
+nav.primary li:last-child {
+    margin-right: 0;
 }
 
 
 nav.primary a {
-    display: inline-block;
-    text-transform: uppercase;
     text-decoration: none;
     color: rgb(120, 123, 99);
-    font-size: 0.8em;
-    position: relative;
+}
+p a:hover{
+    color: rgb(195, 199, 162);
 }
 
 nav.primary a:hover, nav a:active {
-    color: rgb(204, 204, 204);
+    color: rgb(154, 173, 28);
 }
 .banner h1{
     color: rgb(235, 236, 223);
